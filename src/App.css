@@ -1,38 +1,60 @@
 .App {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 600px;
+  height: 350px;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  /* use this if no use transform
+   margin-top: -145px;
+  margin-left: -300px; */
+}
+
+.button-wrapper {
+  padding-top: 25px;
+}
+
+.button-wrapper button {
+  box-shadow: 4px 4px 5px;
+  margin: 10px;
+  width: 100px;
+  height: 80px;
+}
+
+.isClicked {
+  background-color: black;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info {
+  color: black;
+  margin: 0 auto;
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #B2B2B2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.BlackRectangle {
+  padding: 3px;
+  background-color: black;
+  height: 30px;
+  width: 60px;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.BlueRectangle {
+  float: left;
+  background-color: blue;
+  height: 24px;
+  width: 24px;
 }
